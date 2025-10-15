@@ -10,7 +10,6 @@ export default function badDatePicker() {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault()
-
     display.textContent = `${day.value} ${year.value} ${month.value}`
     clearBtn.classList.toggle("hide", false)
     display.classList.add("display-date")
