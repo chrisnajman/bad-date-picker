@@ -13,7 +13,7 @@
   "scripts": {
     "build:js": "esbuild index.js --bundle --minify --target=es2015 --outfile=docs/bundle.js",
     "build:css": "postcss style.css --output docs/style.min.css",
-    "copy:assets": "shx cp -r  json site.webmanifest favicon.ico favicon-16x16.png favicon-32x32.png apple-touch-icon.png android-chrome-192x192.png android-chrome-512x512.png docs/",
+    "copy:assets": "shx cp -r  site.webmanifest favicon.ico favicon-16x16.png favicon-32x32.png apple-touch-icon.png android-chrome-192x192.png android-chrome-512x512.png docs/",
     "copy:html": "shx cp *.html docs/",
     "postprocess:html": "node scripts/postprocess-html.js",
     "build": "npm run build:js && npm run build:css && npm run copy:assets && npm run copy:html && npm run postprocess:html"
